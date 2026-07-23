@@ -1,4 +1,6 @@
-public abstract class OperacaoBancaria implements Operavel{
+package model;
+
+public abstract class OperacaoBancaria implements Operavel {
     private String idOperacao;
     private TipoOperacao tipo;
 

@@ -1,3 +1,8 @@
+package service;
+
+import model.Emprestimo;
+import model.Saque;
+
 import java.math.BigDecimal;
 import java.util.Scanner;
 
@@ -10,7 +15,7 @@ public class Main {
         System.out.println("==========================================");
 
         System.out.println("\nQual operação você deseja realizar?");
-        System.out.println("1 - Realizar Saque");
+        System.out.println("1 - Realizar model.Saque");
         System.out.println("2 - Simular / Solicitar Empréstimo");
         System.out.print("Opção: ");
 

@@ -1,0 +1,6 @@
+model/Saque.class
+service/Main.class
+model/Operavel.class
+model/OperacaoBancaria.class
+model/TipoOperacao.class
+model/Emprestimo.class

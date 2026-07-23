@@ -6,7 +6,7 @@ O **BankShield-Audit** é um sistema bancário interativo simulado em Java, proj
 
 ## Regras de Negócio & Escudos de Proteção
 
-1. **Validação de Saque:** Impede saques com valores negativos ou superiores ao saldo atual disponível (`IllegalStateException`).
+1. **Validação de model.Saque:** Impede saques com valores negativos ou superiores ao saldo atual disponível (`IllegalStateException`).
 2. **Análise de Crédito para Empréstimo:** Calcula o limite pré-aprovado do cliente (5x a renda mensal) e bloqueia solicitações acima desse teto.
 3. **Projeção de Amortização (Tabela Price):** Calcula dinamicamente o valor das parcelas, o Custo Efetivo Total (CET), o total pago em juros e a projeção mensal de vencimentos.
 
@@ -40,7 +40,7 @@ javac -d bin src/*.java
 
 4. Execute a aplicação:
 ```bash
-java -cp bin Main
+java -cp bin service.Main
 ```
 ## Tecnologias Utilizadas
 

@@ -1,3 +1,5 @@
+package model;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.NumberFormat;
@@ -5,7 +7,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-public class Emprestimo extends OperacaoBancaria{
+public class Emprestimo extends OperacaoBancaria {
     private BigDecimal rendaMensal;
     private BigDecimal limiteEmprestimo;
 
@@ -29,7 +31,7 @@ public class Emprestimo extends OperacaoBancaria{
         if (valor.compareTo(limiteEmprestimo)>0){
             throw new IllegalArgumentException("O valor excede o limite pré aprovado");
         }
-        System.out.println("Emprestimo aprovado!");
+        System.out.println("model.Emprestimo aprovado!");
     }
     //metodo calcular parcela
     public BigDecimal calcularParcela(BigDecimal valorSolicitado, int quantidadeMeses){

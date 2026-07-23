@@ -1,6 +1,8 @@
+package model;
+
 import java.math.BigDecimal;
 
-public class Saque extends OperacaoBancaria{
+public class Saque extends OperacaoBancaria {
     private BigDecimal saldoAtual;
 
 
@@ -18,7 +20,7 @@ public class Saque extends OperacaoBancaria{
         }
         saldoAtual = saldoAtual.subtract(valor);
 
-        System.out.println("Saque realizado com sucesso! Novo saldo  R$: "+saldoAtual);
+        System.out.println("model.Saque realizado com sucesso! Novo saldo  R$: "+saldoAtual);
 
     }
 
